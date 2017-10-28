@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Busca de Endereço por CEP</title>
+        <meta name="charset" content="utf-8">
+        <meta name="author" content="Guilherme Sávio">
+        <meta name="description" content="Encontre um endereço a partir de um CEP." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div id="card-busca" class="col s12 m6 offset-m3">
+                        <div class="card white">
+                            <div class="card-content">
+                                <span class="card-title">Buscar Endereço</span>
+                                <p>Digite o CEP para retornar o endereço</p>
+                                <form id="busca-cep">
+                                    <div class="input-field">
+                                        <input id="cep" type="text" class="validate" required autocomplete="off">
+                                        <label class="active" for="cep">Digite o CEP</label>
+                                    </div>
+                                    <div class="center">
+                                        <button class="btn waves-effect waves-light center" type="submit" name="action">Buscar
+                                            <i class="material-icons right">search</i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card-resultado" class="col s12 m6">
+                        <div class="card white darken-2">
+                            <div class="card-content">
+                                <span class="card-title">Resultado da sua busca</span>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="white-text">Desenvolvido por <a href="https://github.com/guilherme-savio" target="_blank">Guilherme Sávio</a><br />APIs utilizadas <a href="https://viacep.com.br/" target="_blank">Via CEP</a> e <a href="https://maps.google.com" target="_blank">Google Maps</a>.</p>
+            </footer> 
+        </section>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/script.min.js"></script>
+    </body>
+</html>
